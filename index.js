@@ -23,13 +23,13 @@ function calculatesFarePrice(destination, beginning) {
   if (((destination - beginning)*264) > 2000 && ((destination - beginning)*264) < 2500) {
     return 25;
   }
-  else if (((destination - beginning)*264) <= 400) {
-    return 0;
-  }
+  
   else if (((destination - beginning)*264)  <= 2000) {
     return 10.56;
   }
-
+  else if (((destination - beginning)*264) <= 400) {
+    return 0;
+  }
   else
     return "cannot travel that far";
 }
