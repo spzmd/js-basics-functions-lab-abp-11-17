@@ -19,7 +19,7 @@ function distanceTravelledInFeet(destination, beginning) {
   }
 }
 
-function calculatesFarePrice(destination, beginning) {
+function calculatesFarePrice(beginning, destination) {
   if (((beginning - destination)*264) > 2000 && ((beginning - destination)*264) < 2500) {
     return 25;
   }
